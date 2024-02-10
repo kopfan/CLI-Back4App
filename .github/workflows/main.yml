@@ -9,7 +9,7 @@ jobs:
         id: hello
         uses: kopfan/TestCiCd@v1
         with:
-          appid: 'ThisIsMyAppId'
+          appid: 'i0U3sduDSinluX2sHf1jRVi6pY7hhd8WZkUUAG88'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
