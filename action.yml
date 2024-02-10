@@ -1,0 +1,16 @@
+# action.yml
+name: 'Hello World Back4App'
+description: 'Runs the Back4App CLI'
+inputs:
+  appid:  # id of input
+    description: 'Your App ID'
+    required: true
+    default: 'none_given'
+outputs:
+  time: # id of output
+    description: 'The time we received'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.appid }}
