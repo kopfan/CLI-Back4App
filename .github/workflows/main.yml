@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: kopfan/TestCiCd@v1
+        uses: kopfan/CLI-Back4App@v1.0.0
         with:
           appid: 'i0U3sduDSinluX2sHf1jRVi6pY7hhd8WZkUUAG88'
       # Use the output from the `hello` step
