@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "CLI-Back4App": {
+      "applicationId": "i0U3sduDSinluX2sHf1jRVi6pY7hhd8WZkUUAG88"
+    },
+    "_default": {
+      "link": "CLI-Back4App"
+    }
+  }
+}
