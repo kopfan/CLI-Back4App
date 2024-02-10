@@ -13,8 +13,9 @@ jobs:
         uses: kopfan/b4a-action@v0.0.6
         with:
           appid: 'i0U3sduDSinluX2sHf1jRVi6pY7hhd8WZkUUAG88'
-          appname: 'CLI-Back4App'
-        run: echo "App-Name ${{appname}}"
+          appname: 'CLI-Back4App'       
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.deploy-dev.outputs.time }}"
+      - name: get B4A CLI Version
+        run: b4a version
