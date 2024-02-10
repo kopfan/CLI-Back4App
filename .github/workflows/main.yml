@@ -1,15 +1,18 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  deploy_to_dev_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: deploy to b4a dev environment
     steps:
-      - name: Hello world action step
-        id: hello
+      - name: checkout repository code
+        id: checkout
+        uses: actions/checkout@v3
+      - name: deploy to DEV
+        id: deploy-dev
         uses: kopfan/b4a-action@v0.0.2
         with:
           appid: 'i0U3sduDSinluX2sHf1jRVi6pY7hhd8WZkUUAG88'
       # Use the output from the `hello` step
       - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        run: echo "The time was ${{ steps.deploy-dev.outputs.time }}"
