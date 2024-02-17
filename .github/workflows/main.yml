@@ -11,7 +11,7 @@ jobs:
       - name: deploy to DEV
         id: deploy-dev
         #uses: kopfan/b4a-action@v0.0.15
-        uses: heinrichcoetzee/back4app-deploy-action@v4
+        uses: kopfan/back4app-deploy-action@v1
         with:
           appid: 'i0U3sduDSinluX2sHf1jRVi6pY7hhd8WZkUUAG88'
           project: 'CLI-Back4App'       
