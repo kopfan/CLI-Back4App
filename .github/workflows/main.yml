@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v3
       - name: deploy to DEV
         id: deploy-dev
-        uses: kopfan/b4a-action@v0.0.11
+        uses: kopfan/b4a-action@v0.0.12
         with:
           appid: 'i0U3sduDSinluX2sHf1jRVi6pY7hhd8WZkUUAG88'
           appname: 'CLI-Back4App'       
