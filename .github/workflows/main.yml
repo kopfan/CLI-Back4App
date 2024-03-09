@@ -14,10 +14,10 @@ jobs:
         uses: kopfan/back4app-deploy-action@v3
         with:
           #appid: 'i0U3sduDSinluX2sHf1jRVi6pY7hhd8WZkUUAG88'
-          appid: ${{ secrets.APPID }}
+          #appid: ${{ secrets.APPID }}
           project: 'CLI-Back4App'       
-          #accountKey: 'md1nNpoMS2yCOPx10oP1dUB1og7f5GUnliwS8Y44'
-          accountKey: ${{ secrets.ACCOUNTKEY }}
+          accountKey: 'md1nNpoMS2yCOPx10oP1dUB1og7f5GUnliwS8Y44'
+          #accountKey: ${{ secrets.ACCOUNTKEY }}
         #env:
         #  appid: ${{ secrets.APPID }}
         #  accountKey: ${{ secrets.ACCOUNTKEY }}
